@@ -1,0 +1,5 @@
+uploads/
+*.env
+config.php
+.DS_Store
+thumbs.db
