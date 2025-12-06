@@ -1,0 +1,521 @@
+/* ===== Global Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #f9e7ff 0, #efe8ef 40%, #ece5ff 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ===== Layout Wrapper ===== */
+.page-wrapper {
+    background: #ffffff;
+    max-width: 980px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    overflow: hidden;
+}
+
+/* ===== Left Side (Form) ===== */
+.form-side {
+    padding: 30px 40px 30px 40px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.tagline {
+    font-size: 12px;
+    color: #777;
+    margin-top: -3px;
+}
+
+/* Heading Block */
+.form-header {
+    margin: 12px 0 20px;
+}
+
+.form-header h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+    color: #2b2353;
+}
+
+.form-header p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Core Form */
+form {
+    background: rgb(245, 229, 253);
+    padding: 18px 20px 20px;
+    max-width: 510px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(155, 81, 224, 0.2);
+}
+
+.form-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #2b2353;
+    text-align: center;
+}
+
+.form-subtitle {
+    font-size: 12px;
+    margin-bottom: 14px;
+    color: #6b6b81;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #4b445c;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px 13px;
+    margin-top: 2px;
+    border: 1px solid #d2c4f0;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+    background: #fdfbff;
+    transition: border 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+input[type="file"] {
+    padding: 12px;
+    background: #f8f2ff;
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: #7b3aec;
+    box-shadow: 0 0 0 2px rgba(123, 58, 236, 0.18);
+    background: #ffffff;
+}
+
+/* Hints & Small Text */
+.hint {
+    font-size: 11px;
+    color: #7a6a9c;
+    margin-top: 3px;
+}
+
+/* File drop visual (welcome main area) */
+.file-drop {
+    border: 1px dashed #c4b5fd;
+    border-radius: 10px;
+    padding: 18px 14px;
+    background: #f7f2ff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    min-height: 90px;  /* bigger height as you requested */
+}
+
+.file-drop-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+    flex-shrink: 0;
+}
+
+.file-drop-text {
+    font-size: 13px;
+    color: #4b445c;
+}
+
+.file-drop-text span {
+    font-weight: 600;
+    color: #4f46e5;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: white;
+    padding: 11px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.4);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.1s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.5);
+    opacity: 0.95;
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+    opacity: 0.9;
+}
+
+/* Links */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #4f46e5;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Status / Extras line */
+.extras {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 11px;
+    color: #6b6b81;
+}
+
+.extras span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+}
+
+/* Messages */
+.message {
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.message.error {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.message.success {
+    background: #ecfdf5;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+/* ===== File List (welcome.php) ===== */
+.files-section {
+    margin-top: 18px;
+    background: #f4f0ff;
+    border-radius: 12px;
+    padding: 12px 12px 14px;
+    border: 1px dashed rgba(79, 70, 229, 0.3);
+}
+
+.files-section h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #3b2c7a;
+}
+
+/* List reset */
+ul {
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Left part of each file row */
+.file-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-name {
+    font-weight: 600;
+    color: #312e81;
+}
+
+.file-name a {
+    display: inline;
+    margin-top: 0;
+}
+
+.file-size {
+    font-size: 11px;
+    color: #6b7280;
+}
+
+/* Actions (right side in li) */
+.file-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    font-size: 11px;
+}
+
+.file-actions a {
+    display: inline;
+    margin-top: 0;
+}
+
+.file-downloads {
+    font-size: 10px;
+    color: #6b7280;
+}
+
+/* Little badges (if needed later) */
+.file-badge {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: rgba(16, 185, 129, 0.15);
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+/* ===== Right Side (Illustration) ===== */
+.illustration-side {
+    /* Bigger visual with background image + gradient */
+    background-image:
+        linear-gradient(145deg, rgba(49,46,129,0.95) 0, rgba(91,33,182,0.9) 40%, rgba(236,72,153,0.9) 100%),
+        url('https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), transparent 70%);
+    top: -40px;
+    right: -40px;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.blob2 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle at 10% 90%, rgba(251, 113, 133, 0.4), transparent 70%);
+    bottom: -80px;
+    left: -60px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hero-illustration {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Bigger image as requested */
+.hero-illustration img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(248, 250, 252, 0.6);
+}
+
+.hero-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 14px;
+}
+
+.hero-subtitle {
+    font-size: 12px;
+    margin-top: 6px;
+    color: rgba(249, 250, 251, 0.9);
+}
+
+/* Highlight cards on right */
+.highlights {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.highlight-card {
+    background: rgba(15, 23, 42, 0.55);
+    border-radius: 12px;
+    padding: 10px 12px;
+    border: 1px solid rgba(248, 250, 252, 0.18);
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.highlight-title {
+    font-weight: 600;
+}
+
+.highlight-pill {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: rgba(56, 189, 248, 0.18);
+    align-self: flex-start;
+    margin-top: 4px;
+    border: 1px solid rgba(56, 189, 248, 0.7);
+}
+
+/* Footer info on right */
+.footer-info {
+    position: relative;
+    z-index: 1;
+    font-size: 10px;
+    margin-top: 22px;
+    opacity: 0.95;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lock-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(248, 250, 252, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 850px) {
+    .page-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .illustration-side {
+        order: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-side {
+        padding: 20px 18px;
+    }
+
+    .form-header h1 {
+        font-size: 22px;
+    }
+}
