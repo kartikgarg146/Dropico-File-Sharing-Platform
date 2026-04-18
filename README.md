@@ -141,12 +141,6 @@ http://localhost/dropico/download.php?token=a3f9c2e1b7...
 
 ---
 
-## 🖼️ Screenshots
-
-> _Add screenshots of the dashboard, upload form, and share link page here._
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
@@ -156,12 +150,6 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 3. Commit your changes: `git commit -m 'Add cool feature'`
 4. Push to the branch: `git push origin feature/cool-feature`
 5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
