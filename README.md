@@ -22,7 +22,6 @@
 | Backend | PHP 8+ |
 | Database | MySQL |
 | Frontend | HTML5 / CSS3 |
-| Local Environment | XAMPP / WAMP |
 
 ---
 
@@ -47,7 +46,6 @@ uploads/
 
 ### Prerequisites
 
-- [XAMPP](https://www.apachefriends.org/) or [WAMP](https://www.wampserver.com/) installed
 - PHP 8.0 or higher
 - MySQL 5.7 or higher
 
