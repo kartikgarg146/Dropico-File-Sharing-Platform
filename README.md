@@ -1,6 +1,6 @@
 # 📦 Dropico — Secure File Sharing Platform
 
-> A lightweight, self-hosted file sharing system built with PHP & MySQL. Upload files, generate unique share links, and track downloads — all from a clean, modern dashboard.
+> A lightweight, self-hosted file sharing system built with PHP & MySQL. Upload files, and track downloads — all from a clean, modern dashboard.
 
 ---
 
